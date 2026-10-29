@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the Shart Shooter KF kickball lineup and find out how to join the team." />
+    <title>Roster | Shart Shooter KF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shart Shooter KF home">
+          <img src="logo.svg" alt="" class="brand-logo" />
+          <span>Shart Shooter KF</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our club</a>
+          <a href="roster.html" class="active" aria-current="page">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html" class="nav-cta">Join the team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">The people behind the plays</p>
+          <h1>Meet the team.</h1>
+          <p class="page-intro">We’re putting the season lineup together. Want to be part of it? There’s room for new teammates.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="sample-note" id="rosterEmptyState">The confirmed roster will appear here as the team is announced.</p>
+          <div class="card-grid roster-grid" id="rosterGrid"></div>
+          <div class="roster-cta">
+            <p>Think you’d fit right in?</p>
+            <a href="membership.html" class="btn primary">Ask about joining</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shart Shooter KF</p>
+        <div class="footer-links">
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="membership.html">Join</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="script.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

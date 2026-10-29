@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Shart Shooter KF team administrator sign in and content management." />
+    <title>Team Admin | Shart Shooter KF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shart Shooter KF home">
+          <img src="logo.svg" alt="" class="brand-logo" />
+          <span>Shart Shooter KF</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="admin.html" class="nav-cta active" aria-current="page">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Team workspace</p>
+          <h1>Admin sign in.</h1>
+          <p class="page-intro">Sign in with the team admin account to manage public photos, announcements, games, and roster.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container admin-container">
+          <div class="admin-config-message" id="adminConfigMessage" hidden>
+            <h2>Connect your Supabase project</h2>
+            <p>Add your project URL and publishable/anon key to <code>supabase-config.js</code>, run <code>supabase-setup.sql</code> in the Supabase SQL Editor, then create and authorize an admin account. See <a href="SUPABASE-SETUP.md">the complete setup guide</a>.</p>
+          </div>
+
+          <form class="admin-login form-shell" id="adminLoginForm">
+            <p class="eyebrow">Authorized team admins only</p>
+            <h2>Sign in</h2>
+            <label>
+              Admin email
+              <input type="email" name="email" autocomplete="username" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" autocomplete="current-password" required />
+            </label>
+            <button type="submit" class="btn primary">Sign in</button>
+            <p class="admin-status" id="adminLoginStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <section class="admin-dashboard" id="adminDashboard" hidden>
+            <div class="admin-dashboard-heading">
+              <div>
+                <p class="eyebrow">Authenticated workspace</p>
+                <h2>Manage the team site.</h2>
+                <p id="adminIdentity"></p>
+              </div>
+              <button type="button" class="btn secondary admin-signout" id="adminSignOut">Sign out</button>
+            </div>
+            <p class="admin-status" id="adminStatus" role="status" aria-live="polite"></p>
+
+            <details class="admin-panel" open>
+              <summary>Gallery photos</summary>
+              <form class="admin-form" id="adminPhotoForm">
+                <label>
+                  Select photos
+                  <input type="file" name="photos" accept="image/jpeg,image/png,image/webp,image/gif" multiple required />
+                </label>
+                <label>
+                  Caption (applies to each photo)
+                  <input type="text" name="caption" maxlength="160" placeholder="Game night under the lights" />
+                </label>
+                <button type="submit" class="btn primary">Publish photos</button>
+              </form>
+              <div class="admin-record-list" id="adminPhotoList"></div>
+            </details>
+
+            <details class="admin-panel" open>
+              <summary>Announcements</summary>
+              <form class="admin-form" id="adminAnnouncementForm">
+                <input type="hidden" name="id" />
+                <label>
+                  Headline
+                  <input type="text" name="title" maxlength="120" required />
+                </label>
+                <label>
+                  Message
+                  <textarea name="body" rows="3" maxlength="1200" required></textarea>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="is_published" checked />
+                  Show this announcement on the home page
+                </label>
+                <div class="admin-form-actions">
+                  <button type="submit" class="btn primary">Save announcement</button>
+                  <button type="button" class="btn secondary" data-reset-form="adminAnnouncementForm">Clear</button>
+                </div>
+              </form>
+              <div class="admin-record-list" id="adminAnnouncementList"></div>
+            </details>
+
+            <details class="admin-panel">
+              <summary>Schedule and scores</summary>
+              <form class="admin-form" id="adminGameForm">
+                <input type="hidden" name="id" />
+                <div class="field-row">
+                  <label>
+                    Opponent
+                    <input type="text" name="opponent" maxlength="120" required />
+                  </label>
+                  <label>
+                    Date and time
+                    <input type="datetime-local" name="game_date" required />
+                  </label>
+                </div>
+                <label>
+                  Field / location
+                  <input type="text" name="location" maxlength="200" />
+                </label>
+                <div class="field-row">
+                  <label>
+                    Game status
+                    <select name="status">
+                      <option value="scheduled">Upcoming</option>
+                      <option value="completed">Final score</option>
+                    </select>
+                  </label>
+                  <label>
+                    Notes (optional)
+                    <input type="text" name="notes" maxlength="300" />
+                  </label>
+                </div>
+                <div class="field-row score-fields">
+                  <label>
+                    Shart Shooter score
+                    <input type="number" name="home_score" min="0" max="999" />
+                  </label>
+                  <label>
+                    Opponent score
+                    <input type="number" name="opponent_score" min="0" max="999" />
+                  </label>
+                </div>
+                <div class="admin-form-actions">
+                  <button type="submit" class="btn primary">Save game</button>
+                  <button type="button" class="btn secondary" data-reset-form="adminGameForm">Clear</button>
+                </div>
+              </form>
+              <div class="admin-record-list" id="adminGameList"></div>
+            </details>
+
+            <details class="admin-panel">
+              <summary>Roster</summary>
+              <form class="admin-form" id="adminPlayerForm">
+                <input type="hidden" name="id" />
+                <div class="field-row">
+                  <label>
+                    Player name
+                    <input type="text" name="display_name" maxlength="100" required />
+                  </label>
+                  <label>
+                    Jersey number
+                    <input type="text" name="jersey_number" maxlength="8" />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label>
+                    Position
+                    <input type="text" name="position" maxlength="60" placeholder="Outfield" />
+                  </label>
+                  <label>
+                    Display order
+                    <input type="number" name="sort_order" min="0" max="999" value="0" />
+                  </label>
+                </div>
+                <label>
+                  Player bio (optional)
+                  <textarea name="bio" rows="2" maxlength="500"></textarea>
+                </label>
+                <div class="admin-form-actions">
+                  <button type="submit" class="btn primary">Save player</button>
+                  <button type="button" class="btn secondary" data-reset-form="adminPlayerForm">Clear</button>
+                </div>
+              </form>
+              <div class="admin-record-list" id="adminPlayerList"></div>
+            </details>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shart Shooter KF · Team admin</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="index.html">Home</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

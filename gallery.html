@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A look at the Shart Shooter KF team, its kickball spirit, and moments from the season." />
+    <title>Gallery | Shart Shooter KF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shart Shooter KF home">
+          <img src="logo.svg" alt="" class="brand-logo" />
+          <span>Shart Shooter KF</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html" class="nav-cta">Join the team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Around the field</p>
+          <h1>Good times, in pictures.</h1>
+          <p class="page-intro">The best moments happen when the whole team shows up. This gallery is ready for our real game-day photos.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-upload-panel">
+            <div>
+              <p class="eyebrow">Team photos</p>
+              <h2>Add your game-day photos.</h2>
+              <p>Team admins can sign in to publish new photos to the public gallery.</p>
+            </div>
+            <div class="upload-actions">
+              <a href="admin.html" class="btn primary">Admin photo upload</a>
+              <span class="upload-hint">Sign-in required</span>
+            </div>
+          </div>
+
+          <div class="gallery-section-heading">
+            <h2>Your photos</h2>
+            <span id="galleryPhotoCount">No photos yet</span>
+          </div>
+          <p class="gallery-data-status" id="galleryDataStatus" role="status" aria-live="polite"></p>
+          <div class="gallery-grid uploaded-gallery" id="uploadedGallery" aria-live="polite"></div>
+
+          <div class="gallery-section-heading sample-gallery-heading">
+            <h2>Club inspiration</h2>
+            <span>Sample images</span>
+          </div>
+          <p class="sample-note">The stadium image below is sample photography, not a Shart Shooter KF game.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-feature">
+              <img src="assets/kickball-field.jpg" alt="Sample photograph of a sports field and crowd under stadium lights" />
+              <figcaption>
+                <span>Sample venue</span>
+                <strong>Game-night atmosphere</strong>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-mark">
+              <div class="gallery-art">
+                <img src="logo.svg" alt="Shart Shooter KF team crest" />
+              </div>
+              <figcaption>
+                <span>Our colors</span>
+                <strong>The Shart Shooter KF crest</strong>
+              </figcaption>
+            </figure>
+
+            <div class="gallery-note-card">
+              <p class="eyebrow">Next up</p>
+              <h2>Our first team photo.</h2>
+              <p>Practice, game night, or the post-game huddle—this spot is waiting for a real team moment.</p>
+              <a href="membership.html" class="text-link">Be part of the picture <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shart Shooter KF · Built for the love of the game.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html">Join</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="script.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

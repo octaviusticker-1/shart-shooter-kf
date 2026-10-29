@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet Shart Shooter KF: a community kickball team built around good people, great games, and showing up for each other." />
+    <title>Shart Shooter KF | Kickball, good people, great games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shart Shooter KF home">
+          <img src="logo.svg" alt="" class="brand-logo" />
+          <span>Shart Shooter KF</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active" aria-current="page">Home</a>
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html" class="nav-cta">Join the team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Good people. Great games. One team.</p>
+            <h1>We came to play.</h1>
+            <p class="lede">
+              Shart Shooter KF is a kickball team for people who love a little competition
+              and a lot of community. New to the game or a regular on the field, there’s a
+              place for you in the lineup.
+            </p>
+            <div class="hero-actions">
+              <a href="membership.html" class="btn primary">Come play with us</a>
+              <a href="about.html" class="btn secondary">Get to know the team</a>
+            </div>
+          </div>
+
+          <aside class="next-game" aria-label="Team schedule update">
+            <div class="next-game-heading">
+              <span>Next game</span>
+              <span class="live-dot">Team update</span>
+            </div>
+            <div class="matchup">
+              <div class="matchup-team">
+                <img src="logo.svg" alt="" />
+                <strong>Shart Shooter KF</strong>
+              </div>
+              <span class="versus">VS</span>
+              <div class="matchup-team">
+                <span class="opponent-mark" aria-hidden="true">?</span>
+                <strong>Opponent TBA</strong>
+              </div>
+            </div>
+            <div class="game-details">
+              Schedule details
+              <strong id="nextGameDetails">Schedule details coming soon</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The club, at a glance</p>
+              <h2>More than a game night.</h2>
+            </div>
+            <a href="about.html" class="text-link">A little about us <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="stat-strip">
+            <div class="stat-item">
+              <strong class="stat-number">01</strong>
+              <span class="stat-label">One team<br />on and off the field</span>
+            </div>
+            <div class="stat-item">
+              <strong class="stat-number">∞</strong>
+              <span class="stat-label">Reasons to<br />come out and play</span>
+            </div>
+            <div class="stat-item">
+              <strong class="stat-number">All</strong>
+              <span class="stat-label">Experience levels<br />are welcome</span>
+            </div>
+          </div>
+          <p class="stat-caption">A community team first. The rest of the season details are coming soon.</p>
+          <article class="home-announcement" id="homeAnnouncement" hidden>
+            <p class="eyebrow">From the team</p>
+            <h2 id="homeAnnouncementTitle"></h2>
+            <p id="homeAnnouncementBody"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section club-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">What we’re about</p>
+              <h2>Show up. Cheer loud. Have fun.</h2>
+            </div>
+          </div>
+          <div class="three-up">
+            <article class="info-card">
+              <span class="card-index">01 / THE GAME</span>
+              <h3>Competitive, never complicated</h3>
+              <p>We like a close game, a good play, and a team that keeps each other in it.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">02 / THE PEOPLE</span>
+              <h3>Room for one more</h3>
+              <p>Bring your energy, learn as you go, and find your people around the bases.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">03 / THE VIBE</span>
+              <h3>Good nights, great stories</h3>
+              <p>Win or lose, the best part is being out there together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-green">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">New faces welcome</p>
+            <h2>There’s always room in the lineup.</h2>
+          </div>
+          <div>
+            <p>
+              Curious about joining? The interest form is ready to preview. We’ll connect
+              the team’s contact details before accepting real submissions.
+            </p>
+            <a href="membership.html" class="text-link">Meet your new team <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shart Shooter KF · Built for the love of the game.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html">Join</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="script.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

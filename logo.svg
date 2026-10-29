@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Shart Shooter KF champions</title>
+  <desc id="description">A polished sports crest showing a kickball player raising a championship trophy.</desc>
+  <defs>
+    <linearGradient id="crest" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#203b5a"/>
+      <stop offset=".52" stop-color="#111c30"/>
+      <stop offset="1" stop-color="#080d18"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff5c3"/>
+      <stop offset=".22" stop-color="#ffe17b"/>
+      <stop offset=".48" stop-color="#d99520"/>
+      <stop offset=".68" stop-color="#ffdc67"/>
+      <stop offset="1" stop-color="#9d5d15"/>
+    </linearGradient>
+    <linearGradient id="skin" x1=".15" y1="0" x2=".86" y2="1">
+      <stop stop-color="#ffe0c3"/>
+      <stop offset=".4" stop-color="#eeb895"/>
+      <stop offset=".78" stop-color="#d78e70"/>
+      <stop offset="1" stop-color="#ae6656"/>
+    </linearGradient>
+    <linearGradient id="uniform" x1=".1" y1="0" x2=".9" y2="1">
+      <stop stop-color="#ffe099"/>
+      <stop offset=".4" stop-color="#f8ae43"/>
+      <stop offset="1" stop-color="#cc5a35"/>
+    </linearGradient>
+    <linearGradient id="hair" x1=".1" y1="0" x2=".9" y2="1">
+      <stop stop-color="#69414c"/>
+      <stop offset=".35" stop-color="#372637"/>
+      <stop offset="1" stop-color="#171523"/>
+    </linearGradient>
+    <radialGradient id="light" cx=".28" cy=".12" r=".92">
+      <stop stop-color="#fff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="depth" x="-.25" y="-.2" width="1.5" height="1.55">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#020611" flood-opacity=".5"/>
+    </filter>
+    <clipPath id="inside">
+      <circle cx="256" cy="248" r="205"/>
+    </clipPath>
+  </defs>
+
+  <path d="M256 9 475 91v155c0 121-87 208-219 257C124 454 37 367 37 246V91Z" fill="#070b13" stroke="url(#metal)" stroke-width="8"/>
+  <path d="M256 25 459 101v145c0 110-77 192-203 241C130 438 53 356 53 246V101Z" fill="url(#crest)" stroke="#f8d77d" stroke-opacity=".48" stroke-width="2"/>
+
+  <g clip-path="url(#inside)">
+    <path d="M38 361c75-51 138-68 218-68s144 17 219 68v170H38Z" fill="#0b1423"/>
+    <path d="M63 139c52-76 116-113 193-113s141 37 193 113" fill="none" stroke="#fff4cf" stroke-opacity=".08" stroke-width="3"/>
+    <circle cx="256" cy="247" r="204" fill="url(#light)"/>
+
+    <g filter="url(#depth)">
+      <!-- Raised trophy -->
+      <path d="M322 59h92v18c0 32-19 57-46 67-27-10-46-35-46-67Z" fill="url(#metal)" stroke="#fff1b0" stroke-width="3"/>
+      <path d="M322 72h-20c0 37 23 62 61 67m51-67h20c0 37-23 62-61 67" fill="none" stroke="#d99d32" stroke-width="12" stroke-linecap="round"/>
+      <path d="M329 76c4 25 16 42 39 52V70h-39Z" fill="#fff5c8" opacity=".3"/>
+      <path d="M331 143h74v12h-74zm12 13h50v12h-50zm13 12h24v36h-24z" fill="url(#metal)"/>
+      <path d="M345 203h46v13h-46z" rx="4" fill="#9d671d"/>
+      <path d="M355 75v45" stroke="#fff7d4" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+
+      <!-- Back hair and ponytail -->
+      <path d="M186 146c-10-39 6-84 47-100 35-14 76 1 89 32 9 20 7 39-2 57l-14 38-105 3Z" fill="url(#hair)"/>
+      <path d="M288 100c26-20 50-16 58 2 7 17-5 34-28 41 13-16 7-25-3-27-8-2-15 2-23 9Z" fill="#2a2030"/>
+
+      <!-- Face, turned slightly toward the raised trophy -->
+      <path d="M208 109c4-30 27-48 59-46 29 2 48 24 46 56l-4 42c-3 31-24 51-53 49-31-2-51-26-50-57Z" fill="url(#skin)" stroke="#a96858" stroke-opacity=".55" stroke-width="2"/>
+      <path d="M201 119c-7-39 14-73 52-81 34-7 67 11 76 45-23-4-43-17-55-35-12 21-39 33-72 34Z" fill="url(#hair)"/>
+      <path d="M204 118c-6 28-2 53 13 72-20-9-31-30-30-57 1-37 20-67 52-81-18 20-28 42-35 66Z" fill="#392735"/>
+      <path d="M300 91c15 14 21 38 14 63-4 15-12 26-23 34 8-23 4-50 9-97Z" fill="#261d2b"/>
+      <path d="M222 128c7-5 15-6 23-3m29 2c7-4 15-4 22 0" fill="none" stroke="#68463f" stroke-width="4" stroke-linecap="round"/>
+      <path d="M226 137c5-3 11-3 15 0m35 0c5-3 11-3 16 0" fill="none" stroke="#35242a" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="234" cy="139" rx="3.3" ry="3.8" fill="#201c25"/>
+      <ellipse cx="284" cy="139" rx="3.3" ry="3.8" fill="#201c25"/>
+      <circle cx="235" cy="138" r="1" fill="#fff"/>
+      <circle cx="285" cy="138" r="1" fill="#fff"/>
+      <path d="M259 140c-3 9-7 17-5 20 2 2 6 3 10 1" fill="none" stroke="#bd7967" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M246 174c8 7 19 8 28 1" fill="none" stroke="#9e4e53" stroke-width="3" stroke-linecap="round"/>
+      <path d="M233 182c8 12 20 18 34 17" fill="none" stroke="#fff0df" stroke-opacity=".42" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Neck and athletic jersey -->
+      <path d="M239 193v27c8 12 27 15 40 1l-1-31Z" fill="url(#skin)"/>
+      <path d="M175 324c5-45 18-75 41-91 15-10 30-15 43-15 20 0 39 8 53 23 19 21 30 49 35 83l-20 40H188Z" fill="url(#uniform)" stroke="#a74e36" stroke-opacity=".62" stroke-width="3"/>
+      <path d="M216 231c10 14 24 22 43 23 18 1 35-7 48-21l14 19c-17 19-38 28-63 27-25-1-46-12-58-31Z" fill="#fff0c5" opacity=".8"/>
+      <path d="M260 255v84m-11-83 11 13 12-13" fill="none" stroke="#fff5d5" stroke-opacity=".72" stroke-width="4"/>
+      <path d="M193 305c18 13 39 20 66 20 27 0 49-7 68-21" fill="none" stroke="#a94936" stroke-opacity=".42" stroke-width="3"/>
+
+      <!-- Arm reaching up; hand wraps the trophy handle -->
+      <path d="M293 229c17-17 31-38 40-60l17-42c4-10 12-14 20-11 8 4 9 12 5 21l-18 43c-10 24-21 45-37 63l-27-14Z" fill="url(#skin)" stroke="#a96858" stroke-opacity=".55" stroke-width="2"/>
+      <path d="M352 121c-3-9-1-17 4-23 3-4 6-9 7-15 1-5 5-7 8-4 3 3 2 8 1 12 5-5 9-9 12-7 4 3 0 9-4 14l-11 16-17 9Z" fill="url(#skin)" stroke="#a96858" stroke-width="2"/>
+      <path d="M355 119c-4-6-4-12-2-18m9 15c-3-6-2-12 1-18m8 16c-2-6 0-12 3-17" fill="none" stroke="#b87762" stroke-width="2" stroke-linecap="round"/>
+      <path d="M296 231c-9 14-19 30-28 49l-25-17c8-20 20-40 37-56Z" fill="url(#uniform)" stroke="#a74e36" stroke-opacity=".6" stroke-width="2"/>
+
+      <!-- Other arm, bent in a confident victory pose -->
+      <path d="M194 237c-20 10-35 25-48 44l-28 40c-6 8-5 17 2 22 7 5 15 2 21-6l30-37c16-18 29-29 46-37Z" fill="url(#skin)" stroke="#a96858" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M121 320c-9 0-16 5-20 12-3 5-8 9-14 12-5 2-5 7-2 10s8 2 12 0c-3 6-5 11-2 14 4 3 9-2 13-7l12-16 9-20Z" fill="url(#skin)" stroke="#a96858" stroke-width="2"/>
+      <path d="M198 238c-15 7-30 15-44 27l18 25c15-12 31-19 48-24Z" fill="url(#uniform)" stroke="#a74e36" stroke-opacity=".6" stroke-width="2"/>
+
+      <!-- Uniform details -->
+      <path d="M260 282h34v42h-34z" fill="#15233a" stroke="#fff0c5" stroke-width="2"/>
+      <text x="277" y="311" text-anchor="middle" fill="#ffe29a" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="24">KF</text>
+      <path d="M197 337h137" stroke="#fff0c5" stroke-opacity=".48" stroke-width="3"/>
+    </g>
+
+    <path d="M58 352h396" stroke="#f5d477" stroke-opacity=".27" stroke-width="2"/>
+  </g>
+
+  <path d="M47 373h418v47c-60 52-129 80-209 91-80-11-149-39-209-91Z" fill="#0a111e" stroke="url(#metal)" stroke-width="5"/>
+  <path d="M67 386h378v25c-54 42-115 66-189 77-74-11-135-35-189-77Z" fill="#14253a"/>
+  <text x="256" y="411" text-anchor="middle" fill="#ffe19a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="900" letter-spacing="3">SHART SHOOTER</text>
+  <text x="256" y="443" text-anchor="middle" fill="#f3f6fb" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" letter-spacing="8">KICKBALL  •  KF</text>
+</svg>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interested in joining Shart Shooter KF? Tell us a little about yourself and your kickball experience." />
+    <title>Join the Team | Shart Shooter KF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shart Shooter KF home">
+          <img src="logo.svg" alt="" class="brand-logo" />
+          <span>Shart Shooter KF</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="record.html">Scoreboard</a>
+          <a href="membership.html" class="nav-cta active" aria-current="page">Join the team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">New players welcome</p>
+          <h1>Let’s get you in the game.</h1>
+          <p class="page-intro">Tell us a little about yourself. This preview is ready for the team’s contact details and season information.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container form-layout">
+          <aside class="form-aside">
+            <p class="eyebrow">A few quick details</p>
+            <h2>All skill levels. Good team spirit.</h2>
+            <p>You don’t need a highlight reel to reach out. Let us know where you’re at and what kind of game you’re looking for.</p>
+            <p class="contact-note">This sample site isn’t connected to a team inbox yet. The form preview will not send or store your information.</p>
+          </aside>
+          <div class="form-shell">
+            <form class="membership-form" id="membershipForm">
+              <div class="field-row">
+                <label>
+                  Your name
+                  <input type="text" name="name" autocomplete="name" placeholder="First and last name" required />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+                </label>
+              </div>
+
+              <div class="field-row">
+                <label>
+                  Phone (optional)
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="(555) 123-4567" />
+                </label>
+                <label>
+                  Kickball experience
+                  <select name="experience">
+                    <option value="new">New to kickball</option>
+                    <option value="some">Played a little</option>
+                    <option value="league">League experience</option>
+                    <option value="any">I’m happy to play anywhere</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Anything you’d like us to know? (optional)
+                <textarea name="message" rows="5" placeholder="Availability, preferred position, or just say hello."></textarea>
+              </label>
+
+              <button type="submit" class="btn primary wide">Preview my message</button>
+              <p class="form-note" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shart Shooter KF</p>
+        <div class="footer-links">
+          <a href="about.html">Our club</a>
+          <a href="roster.html">Roster</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="membership.html">Join</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
